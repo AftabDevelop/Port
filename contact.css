@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-image: url(./89787.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav{
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+    justify-content: end;
+    font-size: 20px;
+    /* color: black; */
+    color: whitesmoke;
+    border: none;
+    list-style-type: none;
+    text-decoration: none;
+    margin-top: 30px;
+}
+.nav>li>a{
+    color: black;
+    margin: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.nav>li>a:hover{
+    color: rgb(255, 62, 102);
+}
+.name{
+    color: whitesmoke;
+    margin-top: 10px;
+    margin-right: 780px;
+}
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    border: 2px solid red;
+    width: 300px;
+    margin-left: 470px;
+    border-radius: 20px;
+    text-align: center;
+    animation: zoomInFadeIn 1.3s ease-out forwards; /* 'forwards' keeps the final state */
+    opacity: 0; /* Initial opacity for the fade-in effect */
+}
+.conct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    color: whitesmoke;
+
+    /* Animation properties */
+    animation: zoomInFadeIn 1.3s ease-out forwards; /* 'forwards' keeps the final state */
+    opacity: 0; /* Initial opacity for the fade-in effect */
+}
+
+/* Keyframes for zoom-in and fade-in effect */
+@keyframes zoomInFadeIn {
+    0% {
+        transform: scale(0.8); /* Starts slightly scaled down */
+        opacity: 0; /* Fully transparent */
+    }
+    100% {
+        transform: scale(1); /* Ends at the natural scale */
+        opacity: 1; /* Fully visible */
+    }
+}
+/* .conct{
+    display: flex;
+    flex-direction: column;
+} */
+

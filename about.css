@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-image: url(./89787.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav{
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+    justify-content: end;
+    font-size: 20px;
+    /* color: black; */
+    color: whitesmoke;
+    border: none;
+    list-style-type: none;
+    text-decoration: none;
+    margin-top: 30px;
+}
+.nav>li>a{
+    color: black;
+    margin: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.nav>li>a:hover{
+    color: rgb(255, 62, 102);
+}
+.name{
+    color: whitesmoke;
+    margin-top: 15px;
+    margin-right: 780px;
+}
+.port{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    color: whitesmoke;
+    animation: bounceIn 1.2s ease-out forwards; /* 'forwards' ensures it retains the final state */
+    opacity: 1; /* Ensures it stays visible */
+}
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    border: 2px solid gray;
+    width: 500px;
+    border-radius: 15px;
+    margin-left: 385px;
+    margin-top: 20px;
+    text-align: center;
+
+    /* Animation properties */
+    animation: bounceIn 1.2s ease-out forwards; /* 'forwards' ensures it retains the final state */
+    opacity: 1; /* Ensures it stays visible */
+}
+
+/* Keyframes for bounce-in effect */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5) translateY(-50px);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.05) translateY(10px);
+        opacity: 1;
+    }
+    80% {
+        transform: scale(0.95) translateY(-5px);
+    }
+    100% {
+        transform: scale(1) translateY(0);
+        opacity: 1; /* Ensures the final state is fully visible */
+    }
+}
